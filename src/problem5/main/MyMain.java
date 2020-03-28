@@ -7,6 +7,7 @@
 package problem5.main;
 
 import problem5.circularqueue.MyCircularQueue;
+import problem5.student.Student;
 
 import java.util.Scanner;
 
@@ -40,6 +41,11 @@ public class MyMain {
             System.out.println("ENTER THE NUMBER OF BACKLOGS");
 
             int b = scanner.nextInt();
+
+            Student student = new Student(b, s);
+
+            myCircularQueue.enqueue(student);
+
 
         }
 

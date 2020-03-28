@@ -52,6 +52,8 @@ public class MyMain {
 
         q.preOrder(root);
 
+        q.queuePrint(q);
+
 
     }
 }

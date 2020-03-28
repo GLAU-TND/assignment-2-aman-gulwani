@@ -105,4 +105,10 @@ public class MyPriorityQueue {
 
     }
 
+    public void peek() {
+
+        System.out.println(front.getData());
+
+    }
+
 }

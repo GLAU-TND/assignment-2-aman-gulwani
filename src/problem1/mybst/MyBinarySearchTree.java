@@ -43,6 +43,7 @@ public void inorderRec(TreeNode root) {
         System.out.println(root.getData());
 
         inorderRec(root.getRight());
+
     }
 
 }
@@ -90,6 +91,66 @@ public void inorderRec(TreeNode root) {
         }
 
         System.out.println("Count of Nodes without Left child" + count);
+
+    }
+
+    public void printLeftTree(TreeNode root) {
+
+        if (root == null)
+
+            return;
+
+        // add root.
+
+        q.add(root);
+
+        // Deelimeter.
+
+        q.add(null);
+
+        while (q.size() > 0) {
+
+            TreeNode temp = q.peek();
+
+            if (temp != null)
+
+                // Print first node of each level.
+
+                System.out.println(temp.getData() + " ");
+
+            // add childrens of all nodes at current level.
+
+            while (q.peek() != null) {
+
+                // If left child is present add into Queue.
+
+                if (temp.getLeft() != null) {
+
+                    q.add(temp.getLeft());
+
+                    // If right child is present add into Queue.
+
+                    if (temp.getRight() != null)
+
+                        q.add(temp.getRight());
+
+                    //remove the current node.
+
+                    q.remove();
+
+                    temp = q.peek();
+
+                }
+
+                q.add(null);
+
+            }
+
+            // Remove the Delimeter of the Previous Level.
+
+            q.remove();
+
+        }
 
     }
 

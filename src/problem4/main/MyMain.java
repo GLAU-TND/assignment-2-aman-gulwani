@@ -6,6 +6,8 @@
  */
 package problem4.main;
 
+import problem1.mybst.MyBinarySearchTree;
+
 import java.util.Scanner;
 
 // executable class
@@ -16,6 +18,7 @@ public class MyMain {
 
         Scanner scanner = new Scanner(System.in);
 
+        MyBinarySearchTree mst = new MyBinarySearchTree();
 
     }
 }

@@ -20,6 +20,11 @@ public class MyMain {
 
         MyPriorityQueue queue = new MyPriorityQueue();
 
+        System.out.println("ENTER THE CHOICE .ENTER 1 TO INSERT and TO VIEW");
+
+        int ch = scanner.nextInt();
+
+        scanner.nextLine();
 
     }
 }

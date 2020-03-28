@@ -6,6 +6,8 @@
  */
 package problem5.main;
 
+import problem5.circularqueue.MyCircularQueue;
+
 import java.util.Scanner;
 
 //executable class
@@ -15,6 +17,6 @@ public class MyMain {
 
         Scanner scanner = new Scanner(System.in);
 
-
+        MyCircularQueue myCircularQueue = new MyCircularQueue();
     }
 }

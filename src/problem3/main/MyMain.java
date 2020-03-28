@@ -48,10 +48,16 @@ public class MyMain {
                     scanner.nextLine();
 
                 }
+
                 queue.show();
+
                 break;
             default:
+
                 System.out.println("WRong choice");
+
         }
+
     }
+
 }

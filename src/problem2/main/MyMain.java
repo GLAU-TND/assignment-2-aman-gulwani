@@ -11,6 +11,8 @@ public class MyMain {
 
     public static void main(String[] args) {
 
+        Traversal t = new Traversal();
+
 
     }
 }

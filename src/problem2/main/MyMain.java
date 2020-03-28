@@ -7,6 +7,7 @@
 package problem2.main;
 
 import problem1.mybst.MyBinarySearchTree;
+import problem1.node.TreeNode;
 
 // executable class
 // use problem1.mybst.MyBinarySearchTree class for creating binary tree
@@ -17,6 +18,8 @@ public class MyMain {
         Traversal t = new Traversal();
 
         MyBinarySearchTree mst = new MyBinarySearchTree();
+
+        TreeNode root = new TreeNode(10);
 
 
     }

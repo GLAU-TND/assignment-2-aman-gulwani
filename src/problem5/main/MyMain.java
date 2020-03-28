@@ -18,5 +18,32 @@ public class MyMain {
         Scanner scanner = new Scanner(System.in);
 
         MyCircularQueue myCircularQueue = new MyCircularQueue();
+
+        System.out.println("Enter the size of Student list");
+
+        int size = scanner.nextInt();
+
+        scanner.nextLine();
+
+        int arr[] = new int[size];
+
+        int count = 0;
+
+        for (int i = 0; i < size; i++) {
+
+            scanner.nextLine();
+
+            System.out.println("ENTER THE STUDENT NAME");
+
+            String s = scanner.nextLine();
+
+            System.out.println("ENTER THE NUMBER OF BACKLOGS");
+
+            int b = scanner.nextInt();
+
+        }
+
     }
+
 }
+

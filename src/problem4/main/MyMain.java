@@ -54,6 +54,9 @@ public class MyMain {
 
         q.queuePrint(q);
 
+        System.out.print("Enter to find preorder Successor : ");
+
+        q.printSuccessor(scanner.nextInt());
 
     }
 }

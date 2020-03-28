@@ -17,4 +17,18 @@ public class Traversal {
         System.out.print(node.getData() + " ");
 
     }
+
+    void printInorder(TreeNode node) {
+
+        if (node == null)
+
+            return;
+
+        printInorder(node.getLeft());
+
+        System.out.print(node.getData() + " ");
+
+        printInorder(node.getRight());
+
+    }
 }

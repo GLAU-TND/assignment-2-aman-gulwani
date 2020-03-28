@@ -8,9 +8,13 @@ package problem1.mybst;
 
 import problem1.node.TreeNode;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 // to implement BinarySearchTree
 public class MyBinarySearchTree {
 
+    static Queue<TreeNode> q;
 
     public TreeNode insert(TreeNode root, int x) {
 
@@ -40,5 +44,54 @@ public void inorderRec(TreeNode root) {
 
         inorderRec(root.getRight());
     }
+
 }
+
+    public void countNodeWithoutLeftchild(TreeNode root) {
+
+        // If tree is empty.
+
+        if (root == null)
+
+            return;
+
+        // Do level order traversal stsrting from root.
+
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+
+        queue.add(root);
+
+        int count = 0; //initialize count of half node.
+
+        while (queue != null) {
+
+            TreeNode temp = queue.poll();
+
+            if (temp == null)
+
+                break;
+
+            if (temp.getLeft() == null)
+
+                count++;
+
+            // enque left child.
+
+            if (temp.getLeft() != null)
+
+                queue.add(temp.getLeft());
+
+            // Enqueue right child.
+
+            if (temp.getRight() != null)
+
+                queue.add(temp.getRight());
+
+        }
+
+        System.out.println("Count of Nodes without Left child" + count);
+
+    }
+
+
 }

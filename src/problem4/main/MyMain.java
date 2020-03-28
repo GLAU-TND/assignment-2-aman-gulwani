@@ -25,5 +25,7 @@ public class MyMain {
         MyQueue q = new MyQueue();
 
         TreeNode root;
+
+        root = new TreeNode(10);
     }
 }

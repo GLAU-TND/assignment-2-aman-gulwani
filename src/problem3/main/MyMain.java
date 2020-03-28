@@ -6,6 +6,8 @@
  */
 package problem3.main;
 
+import problem3.myqueue.MyPriorityQueue;
+
 import java.util.Scanner;
 
 // executable class
@@ -15,6 +17,9 @@ public class MyMain {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+
+        MyPriorityQueue queue = new MyPriorityQueue();
+
 
     }
 }

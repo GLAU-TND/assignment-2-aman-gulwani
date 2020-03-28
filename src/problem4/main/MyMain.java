@@ -7,6 +7,7 @@
 package problem4.main;
 
 import problem1.mybst.MyBinarySearchTree;
+import problem1.node.TreeNode;
 import problem4.myqueue.MyQueue;
 
 import java.util.Scanner;
@@ -22,5 +23,7 @@ public class MyMain {
         MyBinarySearchTree mst = new MyBinarySearchTree();
 
         MyQueue q = new MyQueue();
+
+        TreeNode root;
     }
 }

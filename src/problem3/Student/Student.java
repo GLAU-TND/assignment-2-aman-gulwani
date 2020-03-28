@@ -38,4 +38,15 @@ public class Student {
 
     }
 
+    @Override
+    public String toString() {
+
+        System.out.println("Student Name  " + getName());
+
+        System.out.println("Student RollNo." + getRollNo());
+
+        return "";
+
+    }
+
 }

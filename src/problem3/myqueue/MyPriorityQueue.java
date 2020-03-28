@@ -16,5 +16,14 @@ public class MyPriorityQueue {
 
     private int size;
 
+    public MyPriorityQueue() {
+
+        rear = null;
+
+        front = null;
+
+        size = 0;
+    }
+
 
 }

@@ -26,9 +26,7 @@ public class MyMain {
 
         scanner.nextLine();
 
-        int arr[] = new int[size];
-
-        int count = 0;
+        int[] arr = new int[size];
 
         for (int i = 0; i < size; i++) {
 
@@ -46,8 +44,13 @@ public class MyMain {
 
             myCircularQueue.enqueue(student);
 
-
         }
+
+        System.out.println(" original number of students" + myCircularQueue.getSize());
+
+        System.out.println("no of students deleted=" + myCircularQueue.remove());
+
+        System.out.println("NEW SIZE OF THE QUEUE" + (myCircularQueue.getSize() - myCircularQueue.remove()));
 
     }
 

@@ -12,4 +12,36 @@ public class Student {
 
     private String studentName;
 
+    public Student(int backlogCount, String studentName) {
+
+        this.backlogCount = backlogCount;
+
+        this.studentName = studentName;
+
+    }
+
+    public int getBacklogCount() {
+
+
+        return backlogCount;
+    }
+
+    public void setBacklogCount(int backlogCount) {
+
+        this.backlogCount = backlogCount;
+
+    }
+
+    public String getStudentName() {
+
+        return studentName;
+
+    }
+
+    public void setStudentName(String studentName) {
+
+        this.studentName = studentName;
+
+    }
+
 }

@@ -100,6 +100,20 @@ public class MyCircularQueue {
 
     }
 
+    public Node peek() {
+
+        Node response = null;
+
+        if (!isEmpty()) {
+
+            response = rear.getNext();
+
+        }
+
+        return response;
+
+    }
+
 
 }
 

@@ -154,5 +154,14 @@ public void inorderRec(TreeNode root) {
 
     }
 
+    public void leftView(TreeNode root) {
+
+        // queue to store all the nodes of the tree.
+
+        q = new LinkedList<TreeNode>();
+
+        printLeftTree(root);
+
+    }
 
 }

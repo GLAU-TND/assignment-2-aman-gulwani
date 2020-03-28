@@ -22,30 +22,43 @@ public class MyQueue {
         tmp = null;
 
         size = 0;
+
     }
 
     public Node getFront() {
+
         return front;
+
     }
 
     public void setFront(Node front) {
+
         this.front = front;
+
     }
 
     public Node getEnd() {
+
         return end;
+
     }
 
     public void setEnd(Node end) {
+
         this.end = end;
+
     }
 
     public Node getTmp() {
+
         return tmp;
+
     }
 
     public void setTmp(Node tmp) {
+
         this.tmp = tmp;
+
     }
 
     public int getSize(MyQueue queue) {
@@ -67,6 +80,25 @@ public class MyQueue {
     }
 
     public void setSize(int size) {
+
         this.size = size;
+
+    }
+
+    public void queuePrint(MyQueue queue) {
+
+        while (queue.tmp != null) {
+
+
+            System.out.print(queue.tmp.getNode().getData() + ",");
+
+            queue.tmp = queue.tmp.getNext();
+
+        }
+
+        System.out.println("\b");
+
+        queue.tmp = queue.front;
+
     }
 }
